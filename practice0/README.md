@@ -2,7 +2,7 @@
 
 ### Program Structure
 
-Every Java program **must** start contain the following code in order to run:
+Every Java program **must** contain the following code in order to run:
 
 ```
 class Main
