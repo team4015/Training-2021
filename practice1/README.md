@@ -7,7 +7,7 @@ Conditional statements are one of the most important elements of programming. Th
 ### While Loops
 #### Syntax
 
-```
+```java
 while (condition)
 {
     // code
@@ -19,7 +19,7 @@ While loops are good for running the same code over and over until the value of 
 ### If Statements
 #### Syntax
 
-```
+```java
 if (condition)
 {
     // code
@@ -28,7 +28,7 @@ if (condition)
 
 If statements can check if the condition in the brackets is true or false. If it is true, the program will execute the code inside the curly brackets once and then move on to the next line after the if statement. If it is false, it will skip right over the code inside the curly brackets. If you want to run some lines of code only if the if statement returns false, you can use an if else statement.
 
-```
+```java
 if (condition)
 {
     // code if true
@@ -44,7 +44,7 @@ The code inside the else brackets will only run if the statement is false. Once 
 ### For Loops
 #### Syntax
 
-```
+```java
 for (initialization; condition; increment)
 {
     // code
@@ -53,7 +53,7 @@ for (initialization; condition; increment)
 
 For loops are a bit tricky to get the hang of, but are one of the most important conditional statements. A for loop is a lot like a while loop. One useful feature of for loops is that you can control exactly how many times it will run. The initialization part can be used to make a variable to use as a counter. The condition can be used to check if the value of the counter has reached the wanted amount. The increment is used to increase the value of the counter. For example:
 
-```
+```java
 for (int i = 0; i < 5; i++)
 {
     // code
@@ -74,13 +74,13 @@ There's a couple of extra things that have to do with loops that are good to kno
 
 #### Continue
 
-`continue;` is a lot like break, except instead of making a hard exit, it will finish executing the code until the end of the loop, then it will exit. There are some circumstances in which it is better to use continue instead of break, but this really just depends on your code and what you want your code to do.
+`continue;` is a lot like break, except instead of making a hard exit, it will jump to the start of the loop immediately before the reaching then end of the code inside the curly brackets.  This is useful if you want to skip the bottom half of the loop code and only run the top half before jumping to the next iteration.  Note that in a `for` loop, the counter will still increment after using a `continue`.  There are some circumstances in which it is better to use continue instead of break, but this really just depends on your code and what you want your code to do.
 
 #### Do While Loops
 
 Do while loops are just like while loops, except the condition is checked at the end.
 
-```
+```java
 do
 {
     // code
